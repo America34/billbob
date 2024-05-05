@@ -1,2 +1,17 @@
 <h1>Hello</h1>
 <iframe src="https://a52e4714-2294-4c46-9413-e25f37f08f7a-00-1au9yjlnocmoh.kirk.replit.dev/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+<center>
+<button onclick="openGame()" > Play in Fullscreen </button>
+<script>
+function openGame() {
+	var win = window.open ()
+	var url = "https://a52e4714-2294-4c46-9413-e25f37f08f7a-00-1au9yjlnocmoh.kirk.replit.dev"
+	var iframe = win.document.createElement('iframe')
+	iframe.style.width = "100%"
+	iframe.style.height = "100%"
+	iframe.style.border = "none"
+	iframe.src = url
+	win.document.body.appendChild(iframe)
+}
+</script>
+</center>
